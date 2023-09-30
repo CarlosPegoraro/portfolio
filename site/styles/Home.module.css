@@ -1,0 +1,137 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+.container {
+    width: 100%;
+    padding: 5vh;
+}
+
+/*Header*/
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.markup {
+    background-color: var(--main-color-dark);
+    width: fit-content;
+    padding: 10vh 20px 10vh 20px;
+    border-radius: 0px 0px 50px 10px;
+    position: absolute;
+    top: 0;
+    left: 3vw;
+    box-shadow: 3px 2px 3px 3px #0505056e;
+    transition: 0.5s;
+    animation: markup 2s 1 ease-in alternate;
+}
+
+@keyframes markup {
+    0% {
+        display: none;
+    }
+    100% {
+        display: block;
+    }
+}
+
+.iconsList {
+    list-style: none !important;
+    gap: 3vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    color: var(--light);
+    font-size: 2vw;
+    font-weight: 900;
+    font-family: var(--main-font);
+}
+
+.welcomeBox {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hiName {
+    text-align: start;
+    font-family: Montserrat;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 7.2px;
+    color: var(--main-color);
+}
+
+.welcomeStacksBox {
+    width: 100%;
+    margin: 2vw 0px;
+}
+
+.fullStack {
+    text-align: start;
+    font-family: Poppins;
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 19.2px;
+    color: var(--main-color);
+}
+
+.developer {
+    text-align: end;
+    font-family: Poppins;
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 19.2px;
+    color: var(--secondary-color);
+}
+
+.welcomeText {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 7.2px;
+    color: var(--main-color-dark);
+}
+
+.languangesBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 2px 2px 4px 2px #25252570;
+    padding: 20px 20px;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.languangesList {
+    list-style: none !important;
+    display: flex;
+    gap: 1vw;
+}
+
+.languanges {
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 0.8vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 7.2px;
+    color: var(--secondary-color);
+}
+
+/*Projects*/
+
+
