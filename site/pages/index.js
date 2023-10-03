@@ -5,7 +5,7 @@ import { HeroSection } from "../components/HeroSection";
 import { Project } from "../components/Project";
 import dicionary from "../lang/dicionary";
 
-import logo from "../public/logo.svg"
+import sam from "../public/sam.jpg"
 
 export default function Home() {
   const [language, setLanguage] = useState("portuguese");
@@ -58,7 +58,7 @@ export default function Home() {
         frontStack={projects.one[language].frontStack}
         backStack={projects.one[language].backStack}
         databaseStack={projects.one[language].databaseStack}
-        image={logo}
+        image={"../public/sam.jpg"}
       />
       <Project
         name={projects.two[language].name}
