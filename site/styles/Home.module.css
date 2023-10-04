@@ -186,19 +186,28 @@
 /*Projects*/
 
 .card {
-  width: 100%;
   box-shadow: 3px 4px 7px 1px #25252570;
   padding: 20px;
   border-radius: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 3vw;
   margin: 5vh 0vw;
+  width: fit-content;
+  max-width: 1400px;
 }
 
 .card > article {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: start;
+  width: 60%;
+}
+
+.card:last-child {
+  align-items: center;
 }
 
 .appTitle {
@@ -248,8 +257,8 @@
   color: var(--main-color-dark);
 }
 
-/*Others*/
-
-.iconRotate {
-  transform: rotateX("180deg");
+.projectImage {
+  width: 40%;
+  height: 100%;
+  border-radius: 10px;
 }

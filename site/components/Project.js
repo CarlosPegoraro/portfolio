@@ -18,8 +18,8 @@ export function Project({ name, text, button, stacks, frontStack, backStack, dat
             <li className={styles.stackItem}>Database: {databaseStack}</li>
           </ul>
         </article>
-        <article>
-          <img className={styles.image} src={image} />
+        <article style={{alignItems: "center"}}>
+          <img className={styles.projectImage} src={image} />
         </article>
       </section>
     </div>
