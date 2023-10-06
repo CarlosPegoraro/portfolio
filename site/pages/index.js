@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import { HeroSection } from "../components/HeroSection";
 import { Project } from "../components/Project";
 import dicionary from "../lang/dicionary";
+import { AboutMe } from "../components/AboutMe";
 
 
 export default function Home() {
@@ -69,6 +70,7 @@ export default function Home() {
         databaseStack={projects.two[language].databaseStack}
         image="/logo.svg"
       />
+      <AboutMe language={language}/>
     </div>
   );
 }

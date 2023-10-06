@@ -91,6 +91,20 @@ const dicionary = {
       }
     }
   },
+  aboutMe: {
+    portuguese: {
+      title: "Sobre Mim",
+      text: "Jovem de 17 anos concluindo o ensino médio técnico em ciência da computação. 1 ano de experiência na indústria. Ansioso para expandir conhecimentos e habilidades. Pronto para novos desafios.",
+    },
+    english: {
+      title: "About Me",
+      text: "A 17-year-old student completing a technical high school degree in computer science. 1 year of experience in the industry. Eager to expand knowledge and skills. Ready for new challenges.",
+    },
+    spanish: {
+      title: "Sobre Me",
+      text: "Estudiante de 17 años completando una carrera técnica en informática. 1 año de experiencia en la industria. Ansioso por ampliar conocimientos y habilidades. Listo para nuevos desafíos.",
+    },
+  },
   geral: {
     portuguese: {
       project: "Meus Projetos",
