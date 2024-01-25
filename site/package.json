@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "start": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -16,6 +16,9 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@nuxtjs/tailwindcss": "^6.10.4"
+    "@nuxtjs/composition-api": "^0.33.1",
+    "@nuxtjs/tailwindcss": "^6.10.4",
+    "@pinia/nuxt": "^0.5.1",
+    "nuxt-icon": "latest"
   }
 }
