@@ -19,6 +19,7 @@
     "@nuxtjs/composition-api": "^0.33.1",
     "@nuxtjs/tailwindcss": "^6.10.4",
     "@pinia/nuxt": "^0.5.1",
+    "animate.css": "^4.1.1",
     "nuxt-icon": "latest"
   }
 }
