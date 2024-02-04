@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-start: #FAFAFA;
+  --background-end: #DDDDDD;
+  --color: #252525;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-start: #252525;
+    --background-end: #141414;
+    --color: #FAFAFA;
+  }
+}
+
+body {
+  color: var(--color);
+  background: linear-gradient(to bottom, var(--background-start), var(--background-end));
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1C8990;
+  border-radius: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background-start);
+  border-radius: 10px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
