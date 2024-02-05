@@ -7,7 +7,7 @@ export default function About() {
             <div className="flex flex-col gap-10 w-1/2">
                 <h1 className="text-4xl font-bold text-teal-500">About Me</h1>
                 <p className="text-2xl text-neutral-800 dark:text-neutral-200 w-4/6">
-                    I'm a software engineer with 5 years of experience in web development. I'm passionate about technology and I'm always looking for new challenges.
+                    I&apos;m a software engineer with 5 years of experience in web development. I&apos;m passionate about technology and I&apos;m always looking for new challenges.
                 </p>
             </div>
             <Image src={coding} alt="Coding" className="rounded-full" style={{
