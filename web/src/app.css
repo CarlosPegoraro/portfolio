@@ -3,22 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --background-start: #FAFAFA;
-  --background-end: #DDDDDD;
+  --background: #FAFAFA;
   --color: #252525;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-start: #252525;
-    --background-end: #141414;
+    --background: #141414;
     --color: #FAFAFA;
   }
 }
 
 body {
   color: var(--color);
-  background: linear-gradient(to bottom, var(--background-start), var(--background-end));
+  background: var(--background);
   height: 100vh;
 }
 
