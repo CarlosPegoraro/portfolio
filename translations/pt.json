@@ -1,0 +1,135 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "stacks": "Tecnologias",
+    "projects": "Projetos",
+    "history": "Jornada TI",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "Desenvolvedor",
+    "titleHighlight": "PHP Backend",
+    "subtitle": "Criando soluções robustas do lado servidor com tecnologias modernas. Apaixonado por código limpo, arquiteturas escaláveis e aprendizado contínuo.",
+    "stack1": "PHP • Laravel • PostgreSQL",
+    "stack2": "React • TypeScript • Web Moderna",
+    "description1": "Olá! Sou um desenvolvedor PHP backend apaixonado com expertise em construir aplicações web escaláveis. Me especializo no framework Laravel, bancos de dados PostgreSQL e tecnologias frontend modernas como React e TypeScript.",
+    "description2": "Minha abordagem combina fundamentos sólidos de backend com práticas de desenvolvimento contemporâneas, sempre focando em código limpo, sustentável e experiências excepcionais do usuário."
+  },
+  "techStack": {
+    "title": "Stack Tecnológico",
+    "subtitle": "Um conjunto abrangente de ferramentas para construir aplicações web modernas e escaláveis",
+    "backend": {
+      "title": "Backend",
+      "technologies": ["PHP 8+", "Laravel", "APIs RESTful", "GraphQL", "Microsserviços"]
+    },
+    "database": {
+      "title": "Banco de Dados",
+      "technologies": ["PostgreSQL", "MySQL", "Redis", "Otimização de Consultas", "Design de BD"]
+    },
+    "frontend": {
+      "title": "Frontend",
+      "technologies": ["React", "TypeScript", "Next.js", "Tailwind CSS", "Design Responsivo"]
+    },
+    "devops": {
+      "title": "DevOps & Ferramentas",
+      "technologies": ["Docker", "Git", "Linux", "CI/CD", "AWS/Serviços Cloud"]
+    },
+    "development": {
+      "title": "Desenvolvimento",
+      "technologies": ["Código Limpo", "Princípios SOLID", "TDD", "Padrões de Design", "Agile"]
+    },
+    "versionControl": {
+      "title": "Controle de Versão",
+      "technologies": ["Git", "GitHub", "GitLab", "Estratégias de Branch", "Code Review"]
+    }
+  },
+  "projects": {
+    "title": "Projetos em Destaque",
+    "subtitle": "Uma vitrine do meu trabalho recente em desenvolvimento backend e aplicações full-stack",
+    "ecommerce": {
+      "title": "Plataforma E-Commerce",
+      "description": "Solução e-commerce full-stack construída com Laravel e React. Inclui autenticação de usuários, processamento de pagamentos, gestão de inventário e painel administrativo.",
+      "type": "Full Stack"
+    },
+    "api": {
+      "title": "Sistema de Gestão de APIs",
+      "description": "API RESTful com documentação abrangente, limitação de taxa e monitoramento. Construída para escalabilidade com arquitetura de microsserviços.",
+      "type": "Backend"
+    },
+    "taskManager": {
+      "title": "App de Gestão de Tarefas",
+      "description": "Aplicação colaborativa de gestão de tarefas com atualizações em tempo real, recursos de colaboração em equipe e capacidades avançadas de filtragem.",
+      "type": "Full Stack"
+    },
+    "analytics": {
+      "title": "Dashboard de Analytics",
+      "description": "Dashboard de business intelligence com visualização de dados, relatórios personalizados e insights automatizados para tomada de decisões.",
+      "type": "Full Stack"
+    }
+  },
+  "history": {
+    "title": "Minha Jornada na TI",
+    "subtitle": "A evolução de um desenvolvedor apaixonado - das primeiras linhas de código às arquiteturas modernas",
+    "milestones": {
+      "2018": {
+        "title": "Primeiros Passos na Programação",
+        "description": "Comecei a aprender programação com HTML, CSS e JavaScript. Construí meus primeiros sites estáticos e descobri minha paixão pelo desenvolvimento web.",
+        "type": "Aprendizado"
+      },
+      "2019": {
+        "title": "Descoberta do Backend",
+        "description": "Descobri PHP e me apaixonei pelo desenvolvimento server-side. Comecei a construir sites dinâmicos e aprender sobre bancos de dados.",
+        "type": "Marco"
+      },
+      "2020": {
+        "title": "Framework Laravel",
+        "description": "Dominei o framework Laravel e práticas modernas de PHP. Construí minhas primeiras aplicações full-stack com arquitetura MVC adequada.",
+        "type": "Profissional"
+      },
+      "2021": {
+        "title": "Expertise em Banco de Dados",
+        "description": "Mergulho profundo em PostgreSQL e design de banco de dados. Aprendi sobre otimização, indexação e estruturas de consultas complexas.",
+        "type": "Marco"
+      },
+      "2022": {
+        "title": "Frontend Moderno",
+        "description": "Expandi habilidades para incluir React e TypeScript. Comecei a construir SPAs modernas e melhorei minhas capacidades full-stack.",
+        "type": "Aprendizado"
+      },
+      "2023": {
+        "title": "Crescimento Profissional",
+        "description": "Foquei em arquiteturas escaláveis, microsserviços e práticas DevOps. Mentoreando desenvolvedores júnior e liderando projetos.",
+        "type": "Profissional"
+      },
+      "2024": {
+        "title": "Evolução Contínua",
+        "description": "Mantendo-me atualizado com as últimas tecnologias, explorando integração de IA e construindo aplicações mais sofisticadas.",
+        "type": "Marco"
+      }
+    }
+  },
+  "contact": {
+    "title": "Vamos Nos Conectar",
+    "subtitle": "Pronto para discutir seu próximo projeto ou explorar oportunidades de colaboração? Adoraria ouvir de você.",
+    "getInTouch": "Entre em Contato",
+    "description": "Estou sempre interessado em discutir novas oportunidades, seja um projeto backend desafiador, desenvolvimento full-stack ou consultoria em arquiteturas web modernas.",
+    "email": "Email",
+    "phone": "Telefone",
+    "location": "Localização",
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Seu nome",
+      "email": "Email",
+      "emailPlaceholder": "seu.email@exemplo.com",
+      "subject": "Assunto",
+      "subjectPlaceholder": "Discussão de projeto",
+      "message": "Mensagem",
+      "messagePlaceholder": "Conte-me sobre seu projeto...",
+      "send": "Enviar Mensagem"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Portfólio Desenvolvedor PHP. Construído com React, TypeScript & Tailwind CSS.",
+    "crafted": "Criado com ❤️ e tecnologias web modernas"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "nav": {
+    "about": "About",
+    "stacks": "Tech Stack",
+    "projects": "Projects",
+    "history": "IT Journey",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "PHP Backend",
+    "titleHighlight": "Developer",
+    "subtitle": "Crafting robust server-side solutions with modern technologies. Passionate about clean code, scalable architectures, and continuous learning.",
+    "stack1": "PHP • Laravel • PostgreSQL",
+    "stack2": "React • TypeScript • Modern Web",
+    "description1": "Hello! I'm a passionate PHP backend developer with expertise in building scalable web applications. I specialize in Laravel framework, PostgreSQL databases, and modern frontend technologies like React and TypeScript.",
+    "description2": "My approach combines solid backend fundamentals with contemporary development practices, always focusing on clean, maintainable code and exceptional user experiences."
+  },
+  "techStack": {
+    "title": "Tech Stack",
+    "subtitle": "A comprehensive toolkit for building modern, scalable web applications",
+    "backend": {
+      "title": "Backend",
+      "technologies": ["PHP 8+", "Laravel", "RESTful APIs", "GraphQL", "Microservices"]
+    },
+    "database": {
+      "title": "Database",
+      "technologies": ["PostgreSQL", "MySQL", "Redis", "Query Optimization", "Database Design"]
+    },
+    "frontend": {
+      "title": "Frontend",
+      "technologies": ["React", "TypeScript", "Next.js", "Tailwind CSS", "Responsive Design"]
+    },
+    "devops": {
+      "title": "DevOps & Tools",
+      "technologies": ["Docker", "Git", "Linux", "CI/CD", "AWS/Cloud Services"]
+    },
+    "development": {
+      "title": "Development",
+      "technologies": ["Clean Code", "SOLID Principles", "TDD", "Design Patterns", "Agile"]
+    },
+    "versionControl": {
+      "title": "Version Control",
+      "technologies": ["Git", "GitHub", "GitLab", "Branching Strategies", "Code Review"]
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A showcase of my recent work in backend development and full-stack applications",
+    "ecommerce": {
+      "title": "E-Commerce Platform",
+      "description": "Full-stack e-commerce solution built with Laravel and React. Features include user authentication, payment processing, inventory management, and admin dashboard.",
+      "type": "Full Stack"
+    },
+    "api": {
+      "title": "API Management System",
+      "description": "RESTful API with comprehensive documentation, rate limiting, and monitoring. Built for scalability with microservices architecture.",
+      "type": "Backend"
+    },
+    "taskManager": {
+      "title": "Task Management App",
+      "description": "Collaborative task management application with real-time updates, team collaboration features, and advanced filtering capabilities.",
+      "type": "Full Stack"
+    },
+    "analytics": {
+      "title": "Analytics Dashboard",
+      "description": "Business intelligence dashboard with data visualization, custom reports, and automated insights for decision making.",
+      "type": "Full Stack"
+    }
+  },
+  "history": {
+    "title": "My IT Journey",
+    "subtitle": "The evolution of a passionate developer - from first lines of code to modern architectures",
+    "milestones": {
+      "2018": {
+        "title": "First Steps in Programming",
+        "description": "Started learning programming with HTML, CSS, and JavaScript. Built my first static websites and discovered my passion for web development.",
+        "type": "Learning"
+      },
+      "2019": {
+        "title": "Backend Discovery",
+        "description": "Discovered PHP and fell in love with server-side development. Started building dynamic websites and learning about databases.",
+        "type": "Milestone"
+      },
+      "2020": {
+        "title": "Laravel Framework",
+        "description": "Mastered Laravel framework and modern PHP practices. Built my first full-stack applications with proper MVC architecture.",
+        "type": "Professional"
+      },
+      "2021": {
+        "title": "Database Expertise",
+        "description": "Deep dive into PostgreSQL and database design. Learned about optimization, indexing, and complex query structures.",
+        "type": "Milestone"
+      },
+      "2022": {
+        "title": "Modern Frontend",
+        "description": "Expanded skills to include React and TypeScript. Started building modern SPAs and improved my full-stack capabilities.",
+        "type": "Learning"
+      },
+      "2023": {
+        "title": "Professional Growth",
+        "description": "Focused on scalable architectures, microservices, and DevOps practices. Mentoring junior developers and leading projects.",
+        "type": "Professional"
+      },
+      "2024": {
+        "title": "Continuous Evolution",
+        "description": "Staying current with latest technologies, exploring AI integration, and building more sophisticated applications.",
+        "type": "Milestone"
+      }
+    }
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "subtitle": "Ready to discuss your next project or explore collaboration opportunities? I'd love to hear from you.",
+    "getInTouch": "Get in Touch",
+    "description": "I'm always interested in discussing new opportunities, whether it's a challenging backend project, full-stack development, or consulting on modern web architectures.",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your.email@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "Project discussion",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "send": "Send Message"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 PHP Developer Portfolio. Built with React, TypeScript & Tailwind CSS.",
+    "crafted": "Crafted with ❤️ and modern web technologies"
+  }
+}
