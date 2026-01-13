@@ -1,6 +1,43 @@
 import type { Config } from "tailwindcss"
 
-const config: Config = {
+const config: {
+    darkMode: string[]; content: string[]; prefix: string; theme: {
+        container: { center: boolean; padding: string; screens: { "2xl": string } }; extend: {
+            colors: {
+                border: string;
+                input: string;
+                ring: string;
+                background: string;
+                foreground: string;
+                primary: { DEFAULT: string; foreground: string };
+                secondary: { DEFAULT: string; foreground: string };
+                destructive: { DEFAULT: string; foreground: string };
+                muted: { DEFAULT: string; foreground: string };
+                accent: { DEFAULT: string; foreground: string };
+                popover: { DEFAULT: string; foreground: string };
+                card: { DEFAULT: string; foreground: string };
+                portfolio: {
+                    dark: string;
+                    brown: string;
+                    rust: string;
+                    beige: string;
+                    teal: string;
+                    cyan: string;
+                    mint: string;
+                    light: string
+                }
+            };
+            borderRadius: { lg: string; md: string; sm: string };
+            keyframes: {
+                "accordion-down": { from: { height: string }; to: { height: string } };
+                "accordion-up": { from: { height: string }; to: { height: string } };
+                "fade-in": { from: { opacity: string; transform: string }; to: { opacity: string; transform: string } };
+                "slide-in": { from: { opacity: string; transform: string }; to: { opacity: string; transform: string } }
+            };
+            animation: { "accordion-down": string; "accordion-up": string; "fade-in": string; "slide-in": string }
+        }
+    }; plugins: { handler: () => void }[]
+} = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",

@@ -22,7 +22,7 @@ const HeroSection = () => {
   return (
     <section
       id="about"
-      className="min-h-screen bg-gradient-to-br from-portfolio-dark via-portfolio-brown to-portfolio-rust flex items-center justify-center relative"
+      className="min-h-screen bg-gradient-to-br from-portfolio-dark to-portfolio-rust flex items-center justify-center relative"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div

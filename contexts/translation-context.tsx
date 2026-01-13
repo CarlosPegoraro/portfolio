@@ -30,7 +30,7 @@ const translationsMap = {
 }
 
 export const TranslationProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>("en")
+  const [language, setLanguage] = useState<Language>("pt")
   const [translations, setTranslations] = useState<any>(enTranslations)
 
   useEffect(() => {

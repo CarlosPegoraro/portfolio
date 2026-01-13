@@ -37,7 +37,7 @@ const TechStack = () => {
       {
         title: t("techStack.database.title"),
         icon: <Database className="w-8 h-8" />,
-        color: "portfolio-teal",
+        color: "portfolio-dark",
         technologies: translations?.techStack?.database?.technologies || [],
       },
       {
@@ -86,7 +86,7 @@ const TechStack = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-center mb-4">
-                <div className={`text-${category.color} mr-3`}>{category.icon}</div>
+                <div className={`text-portfolio-${category.color} mr-3`}>{category.icon}</div>
                 <h3 className="text-xl font-semibold text-portfolio-dark">{category.title}</h3>
               </div>
 
@@ -94,7 +94,7 @@ const TechStack = () => {
                 {Array.isArray(category.technologies) &&
                   category.technologies.map((tech: string) => (
                     <li key={tech} className="text-portfolio-rust flex items-center">
-                      <span className={`w-2 h-2 bg-${category.color} rounded-full mr-3`}></span>
+                      <span className={`w-2 h-2 bg-portfolio-${category.color} rounded-full mr-3`}></span>
                       {tech}
                     </li>
                   ))}

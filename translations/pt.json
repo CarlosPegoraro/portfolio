@@ -9,22 +9,23 @@
   "hero": {
     "title": "Desenvolvedor",
     "titleHighlight": "PHP Backend",
-    "subtitle": "Criando soluções robustas do lado servidor com tecnologias modernas. Apaixonado por código limpo, arquiteturas escaláveis e aprendizado contínuo.",
+    "subtitle": "Especialista em projeção de demanda de aplicações e arquitetura de projeto utilizando principios SOLID, OC, DRY, entre outros patterns do desenvolvimento de software.",
     "stack1": "PHP • Laravel • PostgreSQL",
     "stack2": "React • TypeScript • Web Moderna",
-    "description1": "Olá! Sou um desenvolvedor PHP backend apaixonado com expertise em construir aplicações web escaláveis. Me especializo no framework Laravel, bancos de dados PostgreSQL e tecnologias frontend modernas como React e TypeScript.",
-    "description2": "Minha abordagem combina fundamentos sólidos de backend com práticas de desenvolvimento contemporâneas, sempre focando em código limpo, sustentável e experiências excepcionais do usuário."
+    "description1": "Possuo especialização em projetos backend utilizando PHP e Laravel com bancos de dados PostgreSQL e Cassandra. Tenho expertise na area do front end  utilizando ferramentas como React e TypeScript.",
+    "description2": "Combinando patterns e experiencia em gestão de projetos, desenvolvi aplicações de diversas magnitudes e em variados setores sempre focando em código limpo, escalavel e com experiências excepcionais ao usuário."
   },
+
   "techStack": {
     "title": "Stack Tecnológico",
     "subtitle": "Um conjunto abrangente de ferramentas para construir aplicações web modernas e escaláveis",
     "backend": {
       "title": "Backend",
-      "technologies": ["PHP 8+", "Laravel", "APIs RESTful", "GraphQL", "Microsserviços"]
+      "technologies": ["PHP 8+", "Laravel 11+", "Construção de API's", "GraphQL", "Micro-serviços"]
     },
     "database": {
       "title": "Banco de Dados",
-      "technologies": ["PostgreSQL", "MySQL", "Redis", "Otimização de Consultas", "Design de BD"]
+      "technologies": ["PostgreSQL", "MySQL", "Cassandra", "Redis", "Otimização de Consultas", "BD Design"]
     },
     "frontend": {
       "title": "Frontend",
@@ -32,7 +33,7 @@
     },
     "devops": {
       "title": "DevOps & Ferramentas",
-      "technologies": ["Docker", "Git", "Linux", "CI/CD", "AWS/Serviços Cloud"]
+      "technologies": ["Docker", "Git", "Linux", "CI/CD", "Serviços Cloud"]
     },
     "development": {
       "title": "Desenvolvimento",
@@ -43,71 +44,78 @@
       "technologies": ["Git", "GitHub", "GitLab", "Estratégias de Branch", "Code Review"]
     }
   },
+
   "projects": {
     "title": "Projetos em Destaque",
-    "subtitle": "Uma vitrine do meu trabalho recente em desenvolvimento backend e aplicações full-stack",
+    "subtitle": "Os projetos com maior relevância do meu portifolio",
     "ecommerce": {
-      "title": "Plataforma E-Commerce",
-      "description": "Solução e-commerce full-stack construída com Laravel e React. Inclui autenticação de usuários, processamento de pagamentos, gestão de inventário e painel administrativo.",
-      "type": "Full Stack"
+      "title": "Phronésis",
+      "description": "Solução construida em formato de monolito utilizando laravel 11. O projeto consiste em uma plataforma onde autores postam conteudos academicos relacionadas a ciencias sociais como um todo.",
+      "type": "Full-Stack",
+      "site": "https://phronesisblog.com.br"
     },
     "api": {
-      "title": "Sistema de Gestão de APIs",
-      "description": "API RESTful com documentação abrangente, limitação de taxa e monitoramento. Construída para escalabilidade com arquitetura de microsserviços.",
-      "type": "Backend"
+      "title": "Sistema de ChatBot com AI",
+      "description": "Construido no estilo de API Rest, o sistema conta com integração com a Meta e a API da Google AI Studio com o objetivo de fornecer respostas inteligentes e contextuais personalizadas para cada cliente.",
+      "type": "API Restful/Full-Stack",
+      "site": "https://conversai.inf.br"
     },
     "taskManager": {
-      "title": "App de Gestão de Tarefas",
-      "description": "Aplicação colaborativa de gestão de tarefas com atualizações em tempo real, recursos de colaboração em equipe e capacidades avançadas de filtragem.",
-      "type": "Full Stack"
+      "title": "App de Gestão de Financias",
+      "description": "Aplicativo destinado a auxiliar no gerenciamento de contas, ainda um projeto em estagio inicial, porem com potencial para se tornar uma ferramenta robusta de controle financeiro utilizando Open Finance para automatização dos registros.",
+      "type": "Full-Stack",
+      "site": "https://wvl.pegoraro.dev.br"
     },
     "analytics": {
-      "title": "Dashboard de Analytics",
-      "description": "Dashboard de business intelligence com visualização de dados, relatórios personalizados e insights automatizados para tomada de decisões.",
-      "type": "Full Stack"
+      "title": "Plataforma de Gestão de Frota",
+      "description": "Sistema contruido em microservicos com o proposito de rastrear, monitorar e otimizar o uso de veículos em uma frota com integrações de api de mapas com Open Street Map, apis de geração de rotas otimizadas visando tempo, combustivel e desgaste do veiculo.",
+      "type": "Micro-Serviços",
+      "site": "https://buscalog.com.br"
     }
   },
+
   "history": {
-    "title": "Minha Jornada na TI",
-    "subtitle": "A evolução de um desenvolvedor apaixonado - das primeiras linhas de código às arquiteturas modernas",
+    "title": "Minha Jornada na Área",
+    "subtitle": "Toda a minha trajetória acadêmica e profissional",
     "milestones": {
       "2018": {
         "title": "Primeiros Passos na Programação",
-        "description": "Comecei a aprender programação com HTML, CSS e JavaScript. Construí meus primeiros sites estáticos e descobri minha paixão pelo desenvolvimento web.",
+        "description": "Iniciei os estudos em lógica e desenvolvimento web com HTML, CSS e JavaScript, construindo os primeiros projetos estáticos e consolidando o interesse pela área.",
         "type": "Aprendizado"
       },
       "2019": {
-        "title": "Descoberta do Backend",
-        "description": "Descobri PHP e me apaixonei pelo desenvolvimento server-side. Comecei a construir sites dinâmicos e aprender sobre bancos de dados.",
+        "title": "Explorando o Back-end",
+        "description": "Iniciei o desenvolvimento server-side com PHP, desenvolvendo sites dinâmicos e adquirindo os primeiros conhecimentos em bancos de dados relacionais.",
         "type": "Marco"
       },
       "2020": {
-        "title": "Framework Laravel",
-        "description": "Dominei o framework Laravel e práticas modernas de PHP. Construí minhas primeiras aplicações full-stack com arquitetura MVC adequada.",
-        "type": "Profissional"
+        "title": "Especialização em Laravel",
+        "description": "Aprofundamento no framework Laravel e práticas modernas de PHP. Desenvolvimento das primeiras aplicações full-stack utilizando arquitetura MVC.",
+        "type": "Aprendizado"
       },
       "2021": {
-        "title": "Expertise em Banco de Dados",
-        "description": "Mergulho profundo em PostgreSQL e design de banco de dados. Aprendi sobre otimização, indexação e estruturas de consultas complexas.",
+        "title": "Engenharia de Dados",
+        "description": "Foco em PostgreSQL e design de bancos de dados. Estudo avançado sobre otimização de consultas, indexação e estruturas de dados complexas.",
         "type": "Marco"
       },
       "2022": {
-        "title": "Frontend Moderno",
-        "description": "Expandi habilidades para incluir React e TypeScript. Comecei a construir SPAs modernas e melhorei minhas capacidades full-stack.",
+        "title": "Ecossistema Front-end Moderno",
+        "description": "Expansão da stack tecnológica com React e TypeScript, focando na construção de SPAs modernas e interfaces de alta performance.",
         "type": "Aprendizado"
       },
       "2023": {
-        "title": "Crescimento Profissional",
-        "description": "Foquei em arquiteturas escaláveis, microsserviços e práticas DevOps. Mentoreando desenvolvedores júnior e liderando projetos.",
+        "title": "Liderança e Escalabilidade",
+        "description": "Foco em arquiteturas escaláveis e práticas de liderança técnica. Início da atuação em mentoria de desenvolvedores e gestão de projetos.",
         "type": "Profissional"
       },
       "2024": {
-        "title": "Evolução Contínua",
-        "description": "Mantendo-me atualizado com as últimas tecnologias, explorando integração de IA e construindo aplicações mais sofisticadas.",
+        "title": "Evolução e Novos Horizontes",
+        "description": "Consolidação em engenharia de software, explorando integração de IA e arquiteturas sofisticadas para soluções de alta complexidade.",
         "type": "Marco"
       }
     }
   },
+
   "contact": {
     "title": "Vamos Nos Conectar",
     "subtitle": "Pronto para discutir seu próximo projeto ou explorar oportunidades de colaboração? Adoraria ouvir de você.",
@@ -129,7 +137,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2024 Portfólio Desenvolvedor PHP. Construído com React, TypeScript & Tailwind CSS.",
+    "copyright": "© 2026 Portfólio Carlos Eduardo Pegoraro Lopes. Construído com React, TypeScript & Tailwind CSS.",
     "crafted": "Criado com ❤️ e tecnologias web modernas"
   }
 }

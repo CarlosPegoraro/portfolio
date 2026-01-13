@@ -39,7 +39,7 @@ const Contact = () => {
           <p className="text-xl text-portfolio-mint max-w-3xl mx-auto">{t("contact.subtitle")}</p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
@@ -54,7 +54,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-portfolio-light font-medium">{t("contact.email")}</p>
-                  <p className="text-portfolio-mint">your.email@example.com</p>
+                  <p className="text-portfolio-mint">carlospegorarolopes@gmail.com</p>
                 </div>
               </div>
 
@@ -64,7 +64,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-portfolio-light font-medium">{t("contact.phone")}</p>
-                  <p className="text-portfolio-mint">+55 (11) 99999-9999</p>
+                  <p className="text-portfolio-mint">+55 (11) 972231780</p>
                 </div>
               </div>
 
@@ -74,20 +74,20 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-portfolio-light font-medium">{t("contact.location")}</p>
-                  <p className="text-portfolio-mint">São Paulo, Brazil</p>
+                  <p className="text-portfolio-mint">Sorocaba, São Paulo, Brasil</p>
                 </div>
               </div>
             </div>
 
             <div className="flex space-x-4 pt-6">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/carlos-eduardo-pegoraro-lopes-426a7637b/" target="_blank"
                 className="bg-portfolio-teal/20 p-3 rounded-lg text-portfolio-cyan hover:text-portfolio-mint hover:bg-portfolio-teal/30 transition-all duration-300"
               >
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
-                href="#"
+                href="https://github.com/CarlosPegoraro" target="_blank"
                 className="bg-portfolio-teal/20 p-3 rounded-lg text-portfolio-cyan hover:text-portfolio-mint hover:bg-portfolio-teal/30 transition-all duration-300"
               >
                 <Github className="w-6 h-6" />
@@ -96,7 +96,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-portfolio-cyan/20">
+          {/* <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-portfolio-cyan/20">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -171,7 +171,7 @@ const Contact = () => {
                 {t("contact.form.send")}
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
