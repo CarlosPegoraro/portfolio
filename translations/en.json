@@ -3,28 +3,28 @@
     "about": "About",
     "stacks": "Tech Stack",
     "projects": "Projects",
-    "history": "IT Journey",
+    "history": "Journey",
     "contact": "Contact"
   },
   "hero": {
-    "title": "PHP Backend",
-    "titleHighlight": "Developer",
-    "subtitle": "Crafting robust server-side solutions with modern technologies. Passionate about clean code, scalable architectures, and continuous learning.",
+    "title": "Developer",
+    "titleHighlight": "PHP Backend",
+    "subtitle": "Specialist in application demand forecasting and project architecture using SOLID, DRY, and other software development patterns.",
     "stack1": "PHP • Laravel • PostgreSQL",
     "stack2": "React • TypeScript • Modern Web",
-    "description1": "Hello! I'm a passionate PHP backend developer with expertise in building scalable web applications. I specialize in Laravel framework, PostgreSQL databases, and modern frontend technologies like React and TypeScript.",
-    "description2": "My approach combines solid backend fundamentals with contemporary development practices, always focusing on clean, maintainable code and exceptional user experiences."
+    "description1": "I specialize in backend projects using PHP and Laravel with PostgreSQL and Cassandra databases. I also have expertise in frontend development using tools like React and TypeScript.",
+    "description2": "Combining design patterns and project management experience, I have developed applications of various scales and across different industries, always focusing on clean, scalable code and exceptional user experiences."
   },
   "techStack": {
     "title": "Tech Stack",
-    "subtitle": "A comprehensive toolkit for building modern, scalable web applications",
+    "subtitle": "A comprehensive set of tools for building modern and scalable web applications",
     "backend": {
       "title": "Backend",
-      "technologies": ["PHP 8+", "Laravel", "RESTful APIs", "GraphQL", "Microservices"]
+      "technologies": ["PHP 8+", "Laravel 11+", "API Development", "GraphQL", "Microservices"]
     },
     "database": {
       "title": "Database",
-      "technologies": ["PostgreSQL", "MySQL", "Redis", "Query Optimization", "Database Design"]
+      "technologies": ["PostgreSQL", "MySQL", "Cassandra", "Redis", "Query Optimization", "DB Design"]
     },
     "frontend": {
       "title": "Frontend",
@@ -32,7 +32,7 @@
     },
     "devops": {
       "title": "DevOps & Tools",
-      "technologies": ["Docker", "Git", "Linux", "CI/CD", "AWS/Cloud Services"]
+      "technologies": ["Docker", "Git", "Linux", "CI/CD", "Cloud Services"]
     },
     "development": {
       "title": "Development",
@@ -45,65 +45,69 @@
   },
   "projects": {
     "title": "Featured Projects",
-    "subtitle": "A showcase of my recent work in backend development and full-stack applications",
+    "subtitle": "The most relevant projects in my portfolio",
     "ecommerce": {
-      "title": "E-Commerce Platform",
-      "description": "Full-stack e-commerce solution built with Laravel and React. Features include user authentication, payment processing, inventory management, and admin dashboard.",
-      "type": "Full Stack"
+      "title": "Phronésis",
+      "description": "A monolith solution built with Laravel 11. The project is a platform where authors post academic content related to social sciences.",
+      "type": "Full-Stack",
+      "site": "https://phronesisblog.com.br"
     },
     "api": {
-      "title": "API Management System",
-      "description": "RESTful API with comprehensive documentation, rate limiting, and monitoring. Built for scalability with microservices architecture.",
-      "type": "Backend"
+      "title": "AI Chatbot System",
+      "description": "Built as a REST API, the system features integration with Meta and the Google AI Studio API to provide intelligent and personalized contextual responses for each client.",
+      "type": "RESTful API / Full-Stack",
+      "site": "https://conversai.inf.br"
     },
     "taskManager": {
-      "title": "Task Management App",
-      "description": "Collaborative task management application with real-time updates, team collaboration features, and advanced filtering capabilities.",
-      "type": "Full Stack"
+      "title": "Finance Management App",
+      "description": "An application designed to help with account management. Currently in early stages, with potential to become a robust financial control tool using Open Finance for automated records.",
+      "type": "Full-Stack",
+      "site": "https://wvl.pegoraro.dev.br"
     },
     "analytics": {
-      "title": "Analytics Dashboard",
-      "description": "Business intelligence dashboard with data visualization, custom reports, and automated insights for decision making.",
-      "type": "Full Stack"
+      "title": "Fleet Management Platform",
+      "description": "A system built with microservices to track, monitor, and optimize vehicle usage in a fleet. It includes integrations with Open Street Map and route generation APIs optimized for time, fuel, and vehicle wear.",
+      "type": "Microservices",
+      "site": "https://buscalog.com.br"
     }
   },
   "history": {
-    "title": "My IT Journey",
-    "subtitle": "The evolution of a passionate developer - from first lines of code to modern architectures",
+    "title": "My Journey",
+    "subtitle": "My entire academic and professional trajectory",
     "milestones": {
       "2018": {
         "title": "First Steps in Programming",
-        "description": "Started learning programming with HTML, CSS, and JavaScript. Built my first static websites and discovered my passion for web development.",
+        "description": "Started studying logic and web development with HTML, CSS, and JavaScript, building my first static projects and solidifying my interest in the field.",
         "type": "Learning"
       },
       "2019": {
-        "title": "Backend Discovery",
-        "description": "Discovered PHP and fell in love with server-side development. Started building dynamic websites and learning about databases.",
+        "title": "Exploring the Backend",
+        "description": "Started server-side development with PHP, creating dynamic websites and gaining initial knowledge of relational databases.",
         "type": "Milestone"
       },
       "2020": {
-        "title": "Laravel Framework",
-        "description": "Mastered Laravel framework and modern PHP practices. Built my first full-stack applications with proper MVC architecture.",
-        "type": "Professional"
+        "title": "Specializing in Laravel",
+        "description": "Deep dive into the Laravel framework and modern PHP practices. Developed my first full-stack applications using MVC architecture.",
+        "type": "Learning"
       },
       "2021": {
-        "title": "Database Expertise",
-        "description": "Deep dive into PostgreSQL and database design. Learned about optimization, indexing, and complex query structures.",
+        "title": "Data Engineering",
+        "description": "Focused on PostgreSQL and database design. Advanced studies on query optimization, indexing, and complex data structures.",
         "type": "Milestone"
       },
       "2022": {
-        "title": "Modern Frontend",
-        "description": "Expanded skills to include React and TypeScript. Started building modern SPAs and improved my full-stack capabilities.",
+        "title": "Modern Frontend Ecosystem",
+        "description": "Expanded my tech stack with React and TypeScript, focusing on building modern SPAs and high-performance interfaces.",
         "type": "Learning"
       },
       "2023": {
-        "title": "Professional Growth",
-        "description": "Focused on scalable architectures, microservices, and DevOps practices. Mentoring junior developers and leading projects.",
+        "title": "Leadership and Scalability",
+        "description": "Focused on scalable architectures and technical leadership practices. Started mentoring developers and managing projects.",
         "type": "Professional"
       },
       "2024": {
-        "title": "Continuous Evolution",
-        "description": "Staying current with latest technologies, exploring AI integration, and building more sophisticated applications.",
+        "title": "Evolution and New Horizons",
+        "description": "Consolidated my software engineering skills, exploring AI integration and sophisticated architectures for high-complexity solutions.",
         "type": "Milestone"
       }
     }
@@ -112,7 +116,7 @@
     "title": "Let's Connect",
     "subtitle": "Ready to discuss your next project or explore collaboration opportunities? I'd love to hear from you.",
     "getInTouch": "Get in Touch",
-    "description": "I'm always interested in discussing new opportunities, whether it's a challenging backend project, full-stack development, or consulting on modern web architectures.",
+    "description": "I'm always interested in discussing new opportunities, whether it's a challenging backend project, full-stack development, or modern web architecture consulting.",
     "email": "Email",
     "phone": "Phone",
     "location": "Location",
@@ -129,7 +133,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2024 PHP Developer Portfolio. Built with React, TypeScript & Tailwind CSS.",
+    "copyright": "© 2026 Portfolio Carlos Eduardo Pegoraro Lopes. Built with React, TypeScript & Tailwind CSS.",
     "crafted": "Crafted with ❤️ and modern web technologies"
   }
 }

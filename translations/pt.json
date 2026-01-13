@@ -9,23 +9,22 @@
   "hero": {
     "title": "Desenvolvedor",
     "titleHighlight": "PHP Backend",
-    "subtitle": "Especialista em projeção de demanda de aplicações e arquitetura de projeto utilizando principios SOLID, OC, DRY, entre outros patterns do desenvolvimento de software.",
+    "subtitle": "Especialista em projeção de demanda de aplicações e arquitetura de projetos utilizando princípios SOLID, DRY, entre outros patterns de desenvolvimento de software.",
     "stack1": "PHP • Laravel • PostgreSQL",
     "stack2": "React • TypeScript • Web Moderna",
-    "description1": "Possuo especialização em projetos backend utilizando PHP e Laravel com bancos de dados PostgreSQL e Cassandra. Tenho expertise na area do front end  utilizando ferramentas como React e TypeScript.",
-    "description2": "Combinando patterns e experiencia em gestão de projetos, desenvolvi aplicações de diversas magnitudes e em variados setores sempre focando em código limpo, escalavel e com experiências excepcionais ao usuário."
+    "description1": "Possuo especialização em projetos backend utilizando PHP e Laravel com bancos de dados PostgreSQL e Cassandra. Tenho expertise na área de front-end utilizando ferramentas como React e TypeScript.",
+    "description2": "Combinando patterns e experiência em gestão de projetos, desenvolvi aplicações de diversas magnitudes e em variados setores, sempre focando em código limpo, escalável e com experiências excepcionais ao usuário."
   },
-
   "techStack": {
-    "title": "Stack Tecnológico",
+    "title": "Stack Tecnológica",
     "subtitle": "Um conjunto abrangente de ferramentas para construir aplicações web modernas e escaláveis",
     "backend": {
       "title": "Backend",
-      "technologies": ["PHP 8+", "Laravel 11+", "Construção de API's", "GraphQL", "Micro-serviços"]
+      "technologies": ["PHP 8+", "Laravel 11+", "Construção de APIs", "GraphQL", "Microserviços"]
     },
     "database": {
       "title": "Banco de Dados",
-      "technologies": ["PostgreSQL", "MySQL", "Cassandra", "Redis", "Otimização de Consultas", "BD Design"]
+      "technologies": ["PostgreSQL", "MySQL", "Cassandra", "Redis", "Otimização de Consultas", "DB Design"]
     },
     "frontend": {
       "title": "Frontend",
@@ -37,43 +36,41 @@
     },
     "development": {
       "title": "Desenvolvimento",
-      "technologies": ["Código Limpo", "Princípios SOLID", "TDD", "Padrões de Design", "Agile"]
+      "technologies": ["Código Limpo", "Princípios SOLID", "TDD", "Design Patterns", "Agile"]
     },
     "versionControl": {
       "title": "Controle de Versão",
       "technologies": ["Git", "GitHub", "GitLab", "Estratégias de Branch", "Code Review"]
     }
   },
-
   "projects": {
     "title": "Projetos em Destaque",
-    "subtitle": "Os projetos com maior relevância do meu portifolio",
+    "subtitle": "Os projetos com maior relevância do meu portfólio",
     "ecommerce": {
       "title": "Phronésis",
-      "description": "Solução construida em formato de monolito utilizando laravel 11. O projeto consiste em uma plataforma onde autores postam conteudos academicos relacionadas a ciencias sociais como um todo.",
+      "description": "Solução construída em formato de monólito utilizando Laravel 11. O projeto consiste em uma plataforma onde autores postam conteúdos acadêmicos relacionados a ciências sociais como um todo.",
       "type": "Full-Stack",
       "site": "https://phronesisblog.com.br"
     },
     "api": {
-      "title": "Sistema de ChatBot com AI",
-      "description": "Construido no estilo de API Rest, o sistema conta com integração com a Meta e a API da Google AI Studio com o objetivo de fornecer respostas inteligentes e contextuais personalizadas para cada cliente.",
-      "type": "API Restful/Full-Stack",
+      "title": "Sistema de Chatbot com IA",
+      "description": "Construído no estilo de API REST, o sistema conta com integração com a Meta e a API do Google AI Studio com o objetivo de fornecer respostas inteligentes e contextuais personalizadas para cada cliente.",
+      "type": "API RESTful / Full-Stack",
       "site": "https://conversai.inf.br"
     },
     "taskManager": {
-      "title": "App de Gestão de Financias",
-      "description": "Aplicativo destinado a auxiliar no gerenciamento de contas, ainda um projeto em estagio inicial, porem com potencial para se tornar uma ferramenta robusta de controle financeiro utilizando Open Finance para automatização dos registros.",
+      "title": "App de Gestão de Finanças",
+      "description": "Aplicativo destinado a auxiliar no gerenciamento de contas. Projeto em estágio inicial com potencial para se tornar uma ferramenta robusta de controle financeiro utilizando Open Finance para automatização dos registros.",
       "type": "Full-Stack",
       "site": "https://wvl.pegoraro.dev.br"
     },
     "analytics": {
       "title": "Plataforma de Gestão de Frota",
-      "description": "Sistema contruido em microservicos com o proposito de rastrear, monitorar e otimizar o uso de veículos em uma frota com integrações de api de mapas com Open Street Map, apis de geração de rotas otimizadas visando tempo, combustivel e desgaste do veiculo.",
-      "type": "Micro-Serviços",
+      "description": "Sistema construído em microserviços com o propósito de rastrear, monitorar e otimizar o uso de veículos em uma frota, com integrações de API de mapas (Open Street Map) e APIs de geração de rotas otimizadas visando tempo, combustível e desgaste do veículo.",
+      "type": "Microserviços",
       "site": "https://buscalog.com.br"
     }
   },
-
   "history": {
     "title": "Minha Jornada na Área",
     "subtitle": "Toda a minha trajetória acadêmica e profissional",
@@ -84,7 +81,7 @@
         "type": "Aprendizado"
       },
       "2019": {
-        "title": "Explorando o Back-end",
+        "title": "Explorando o Backend",
         "description": "Iniciei o desenvolvimento server-side com PHP, desenvolvendo sites dinâmicos e adquirindo os primeiros conhecimentos em bancos de dados relacionais.",
         "type": "Marco"
       },
@@ -99,7 +96,7 @@
         "type": "Marco"
       },
       "2022": {
-        "title": "Ecossistema Front-end Moderno",
+        "title": "Ecossistema Frontend Moderno",
         "description": "Expansão da stack tecnológica com React e TypeScript, focando na construção de SPAs modernas e interfaces de alta performance.",
         "type": "Aprendizado"
       },
@@ -115,19 +112,18 @@
       }
     }
   },
-
   "contact": {
     "title": "Vamos Nos Conectar",
-    "subtitle": "Pronto para discutir seu próximo projeto ou explorar oportunidades de colaboração? Adoraria ouvir de você.",
+    "subtitle": "Pronto para discutir seu próximo projeto ou explorar oportunidades de colaboração? Adoraria ouvir você.",
     "getInTouch": "Entre em Contato",
     "description": "Estou sempre interessado em discutir novas oportunidades, seja um projeto backend desafiador, desenvolvimento full-stack ou consultoria em arquiteturas web modernas.",
-    "email": "Email",
+    "email": "E-mail",
     "phone": "Telefone",
     "location": "Localização",
     "form": {
       "name": "Nome",
       "namePlaceholder": "Seu nome",
-      "email": "Email",
+      "email": "E-mail",
       "emailPlaceholder": "seu.email@exemplo.com",
       "subject": "Assunto",
       "subjectPlaceholder": "Discussão de projeto",
