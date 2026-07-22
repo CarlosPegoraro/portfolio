@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import {BrowserRouter} from "react-router";
 import Router from "./Router.tsx";
 import './main.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
