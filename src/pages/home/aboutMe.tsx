@@ -1,25 +1,24 @@
 import profile from '@/assets/profile.jpeg'
+import SectionTitle from "@/components/SectionTitle.tsx";
 
 export default function AboutMe() {
     return (
         <main className={"grid grid-cols-12 p-20 pt-10 bg-linear-to-b from-gray-950/40 to-transparent mx-30 rounded-lg"}>
-            <h1 className={"text-cyan-400 font-header uppercase text-4xl font-semibold col-span-12"}>
-                {"// Sobre Mim"}
-            </h1>
+            <SectionTitle text={"// Sobre Mim"}/>
             <section className={"flex flex-col p-20 col-span-4 gap-8 font-code text-xl mt-15"}>
                 <img src={profile} alt={"Carlos Eduardo"}
                      className={"bg-white w-60 h-60 rounded-full mx-auto border-3 border-cyan-800"}/>
                 <article>
-                    <i class="bi bi-compass"></i> {"Sorocaba, Brasil"}
+                    <i className="bi bi-compass"></i> {"Sorocaba, Brasil"}
                 </article>
                 <article>
-                    <i class="bi bi-person-circle"></i> {"5 de Experiencia no Mercado"}
+                    <i className="bi bi-person-circle"></i> {"5 de Experiencia no Mercado"}
                 </article>
                 <article>
-                    <i class="bi bi-bank"></i> {"Ciencias Economicas - Uniso"}
+                    <i className="bi bi-bank"></i> {"Ciencias Economicas - Uniso"}
                 </article>
                 <article>
-                    <i class="bi bi-code-square"></i> {"Analise e Desenvolvimento de Sistemas - FAC-SP"}
+                    <i className="bi bi-code-square"></i> {"Analise e Desenvolvimento de Sistemas - FAC-SP"}
                 </article>
             </section>
             <section className={"flex flex-col p-20 col-span-8 gap-6 text-2xl/10 font-semibold"}>

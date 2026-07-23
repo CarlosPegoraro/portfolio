@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap'); /*Text*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap'); /*Code*/
 
+@import url('styles/animations.css');
+@import url('styles/customCard.css');
+
 @import "tailwindcss";
 
 @theme {
@@ -9,36 +12,4 @@
     --font-code: "Source Code Pro", monospace;
     --font-text: "Manrope", sans-serif;
     --fade-duration: 0.8s;
-}
-
-.fade-in {
-    animation: fade-in-left var(--fade-duration) ease-out forwards;
-}
-
-@keyframes fade-in-left {
-    from {
-        opacity: 0;
-        transform: translateX(-40px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.neo-pulse {
-    animation: neonPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes neonPulse {
-    0%, 100% {
-        opacity: 0.50;
-        filter: drop-shadow(0 0 8px #22d3ee) drop-shadow(0 0 18px #06b6d4);
-    }
-
-    50% {
-        opacity: 0.85;
-        filter: drop-shadow(0 0 16px #67e8f9) drop-shadow(0 0 32px #22d3ee);
-    }
 }
