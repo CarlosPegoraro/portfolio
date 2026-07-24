@@ -1,5 +1,6 @@
 import NavItem, {type NavItemsProps} from "./header/NavItem.tsx";
 import Logo from "./Logo.tsx";
+import {BackgroundMusic} from "@/components/BackgroundMusic.tsx";
 
 const navbarItems: NavItemsProps[] = [
     {text: "Sobre", link: "/", selected: false},
@@ -18,6 +19,9 @@ export default function Header() {
                     <NavItem text={item.text} selected={item.selected} link={item.link}/>
                 ))}
             </ul>
+            <div className={"flex gap-2"}>
+                <BackgroundMusic />
+            </div>
         </nav>
     )
 }

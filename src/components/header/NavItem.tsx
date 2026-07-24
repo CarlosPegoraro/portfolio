@@ -9,7 +9,7 @@ export interface NavItemsProps {
 export default function NavItem({text, selected, link} : NavItemsProps) {
     return (
         <li>
-            <Link to={link} className={"text-white text-lg font-medium uppercase " +
+            <Link to={link} className={"text-white text-lg font-medium " +
                 "duration-300 hover:text-cyan-400 cursor-pointer " +
                 "flex flex-col gap-2 items-center justify-center " +
                 (selected ? "text-cyan-400 border-b-2 border-cyan-400 pb-2" : "")}>
