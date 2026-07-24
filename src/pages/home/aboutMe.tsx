@@ -1,9 +1,17 @@
 import profile from '@/assets/profile.jpeg'
 import SectionTitle from "@/components/SectionTitle.tsx";
+import {useInView} from "@/hooks/useInView.tsx";
 
 export default function AboutMe() {
+    const { ref, isVisible } = useInView<HTMLElement>({
+        threshold: 0.2,
+        triggerOnce: true,
+    });
+
     return (
-        <main className={"grid grid-cols-12 p-20 pt-10 bg-linear-to-b from-gray-950/40 to-transparent mx-30 rounded-lg"}>
+        <main ref={ref}
+            className={"grid grid-cols-12 p-20 pt-10 bg-linear-to-b from-gray-950/40 to-transparent mx-30 rounded-lg " +
+                (isVisible ? "fade-in" : "opacity-0")}>
             <SectionTitle text={"// Sobre Mim"}/>
             <section className={"flex flex-col p-20 col-span-4 gap-8 font-code text-xl mt-15"}>
                 <img src={profile} alt={"Carlos Eduardo"}

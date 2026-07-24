@@ -10,7 +10,8 @@ const navbarItems: NavItemsProps[] = [
 ]
 export default function Header() {
     return (
-        <nav className={"bg-gray-950/40 backdrop-blur-2xl bg-clip-padding w-dvw flex justify-between p-3 px-20 fixed shadow-sm"}>
+        <nav className={"bg-gray-950/40 backdrop-blur-2xl bg-clip-padding w-dvw flex justify-between " +
+            "p-7 px-20 fixed shadow-sm z-10"}>
             <Logo />
             <ul className={"flex gap-10"}>
                 {navbarItems.map((item) => (
