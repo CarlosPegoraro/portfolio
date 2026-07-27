@@ -20,9 +20,9 @@ type SkillItemProps = {
 
 function SkillItem({label, icon}: SkillItemProps) {
     return (
-        <div className={"flex flex-col justify-center items-center gap-4"}>
+        <div className={"flex min-w-0 flex-col items-center justify-center gap-4 text-center"}>
             {icon}
-            <p className={"font-code text-xl"}>{label}</p>
+            <p className={"font-code text-xl break-words"}>{label}</p>
         </div>
     );
 }
@@ -35,12 +35,12 @@ export default function Skills() {
 
     return (
         <main ref={ref}
-              className={`grid grid-cols-12 p-20 pt-10 gap-10 bg-linear-to-t from-gray-950/40 to-transparent mx-30 rounded-lg ${
+              id="skills" className={`mx-4 grid grid-cols-1 gap-10 rounded-lg bg-linear-to-t from-gray-950/40 to-transparent px-5 py-10 sm:mx-8 sm:px-8 lg:mx-auto lg:max-w-[1600px] lg:grid-cols-12 lg:px-12 lg:py-14 xl:px-16 ${
                   isVisible ? "fade-in" : "opacity-0"
               }`}
               style={{ "--fade-duration": "0.8s" } as CSSProperties}>
             <SectionTitle text={"// Skills e Ferramentas"}/>
-            <section className="skills-card col-span-6 fade-in" style={{ "--fade-duration": "1.8s" } as React.CSSProperties}>
+            <section className="skills-card fade-in lg:col-span-6" style={{ "--fade-duration": "1.8s" } as React.CSSProperties}>
                 <span className="skills-title uppercase">{"Desenvolvimento"}</span>
                 <article className="skills-grid">
                     <SkillItem label="Laravel" icon={<LaravelIcon/>}/>
@@ -55,7 +55,7 @@ export default function Skills() {
                     <SkillItem label="Linux" icon={<LinuxIcon/>}/>
                 </article>
             </section>
-            <section className="skills-card col-span-6 fade-in" style={{ "--fade-duration": "2.1s" } as React.CSSProperties}>
+            <section className="skills-card fade-in lg:col-span-6" style={{ "--fade-duration": "2.1s" } as React.CSSProperties}>
                 <span className="skills-title uppercase">{"Economia & Dados"}</span>
                 <article className="skills-grid">
                     <SkillItem label="Excel Avançado" icon={<i className="bi bi-file-earmark-spreadsheet text-5xl text-white"></i>}/>

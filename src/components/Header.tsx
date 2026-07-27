@@ -1,26 +1,34 @@
 import NavItem, {type NavItemsProps} from "./header/NavItem.tsx";
 import Logo from "./Logo.tsx";
 import {BackgroundMusic} from "@/components/BackgroundMusic.tsx";
+import {useState} from "react";
 
 const navbarItems: NavItemsProps[] = [
-    {text: "Sobre", link: "/", selected: false},
-    {text: "Skills", link: "/", selected: false},
-    {text: "Projetos", link: "/", selected: false},
-    {text: "Jornada", link: "/", selected: false},
-    {text: "Contato", link: "/", selected: false},
+    {text: "Sobre", link: "/#sobre", selected: false},
+    {text: "Skills", link: "/#skills", selected: false},
+    {text: "Projetos", link: "/projects", selected: false},
+    {text: "Jornada", link: "/#jornada", selected: false},
+    {text: "Contato", link: "/#contato", selected: false},
 ]
 export default function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
-        <nav className={"bg-gray-950/40 backdrop-blur-2xl bg-clip-padding w-dvw flex justify-between " +
-            "p-7 px-20 fixed shadow-sm z-10"}>
+        <nav className="fixed z-20 w-full bg-gray-950/75 shadow-sm backdrop-blur-2xl">
+            <div className="relative mx-auto flex min-h-18 max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-12">
             <Logo />
-            <ul className={"flex gap-10"}>
+            <button type="button" aria-label="Abrir menu" aria-expanded={isOpen} onClick={() => setIsOpen(!isOpen)}
+                    className="rounded-md p-2 text-2xl text-white transition hover:bg-cyan-950/60 hover:text-cyan-300 md:hidden">
+                <i className={`bi ${isOpen ? "bi-x-lg" : "bi-list"}`}/>
+            </button>
+            <ul className={`${isOpen ? "flex" : "hidden"} absolute left-0 top-full w-full flex-col gap-1 border-t border-cyan-950 bg-gray-950/95 px-5 py-4 shadow-lg backdrop-blur-xl md:static md:flex md:w-auto md:flex-row md:gap-7 md:border-0 md:bg-transparent md:p-0 md:shadow-none`}>
                 {navbarItems.map((item) => (
-                    <NavItem text={item.text} selected={item.selected} link={item.link}/>
+                    <NavItem key={item.text} text={item.text} selected={item.selected} link={item.link} onNavigate={() => setIsOpen(false)}/>
                 ))}
             </ul>
-            <div className={"flex gap-2"}>
+            <div className="hidden gap-2 md:flex">
                 <BackgroundMusic />
+            </div>
             </div>
         </nav>
     )

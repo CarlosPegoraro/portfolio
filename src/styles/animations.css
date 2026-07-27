@@ -29,3 +29,13 @@
         filter: drop-shadow(0 0 16px #67e8f9) drop-shadow(0 0 32px #22d3ee);
     }
 }
+
+/* Cada projeto permanece em foco; ao final do seu espaço de scroll, o próximo painel o substitui. */
+@media (min-width: 768px) {
+    .project-scroll-panel {
+        transform-origin: center top;
+        opacity: var(--project-opacity, 1);
+        transform: translate3d(0, var(--project-offset, 0), 0) scale(var(--project-scale, 1));
+        will-change: transform, opacity;
+    }
+}

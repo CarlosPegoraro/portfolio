@@ -13,3 +13,12 @@
     --font-text: "Manrope", sans-serif;
     --fade-duration: 0.8s;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+}

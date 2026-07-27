@@ -4,20 +4,20 @@ import cv from "@/assets/hero.png"
 
 export default function HeroSection() {
     return (
-        <section className={"min-h-screen grid grid-cols-12 items-center px-56 pb-0"}>
-            <article className={"col-span-6 flex flex-col text-white gap-8 fade-in"}
+        <section className="mx-auto grid min-h-screen max-w-[1600px] grid-cols-1 items-center gap-10 px-5 pb-12 pt-28 sm:px-8 md:pt-32 lg:grid-cols-2 lg:px-12 xl:px-16">
+            <article className={"flex flex-col gap-6 text-white fade-in lg:gap-8"}
                  style={{ "--fade-duration": "1.5s" } as React.CSSProperties}>
-                <span className={"text-cyan-400 text-4xl font-bold uppercase"}>
+                <span className="font-bold uppercase text-cyan-400 text-2xl sm:text-3xl lg:text-4xl">
                     {"Olá, Eu sou"}
                 </span>
-                <span className={"text-neutral-50 text-7xl font-bold uppercase"}>
+                <h1 className="font-bold uppercase text-neutral-50 text-4xl leading-tight sm:text-5xl lg:text-6xl xl:text-7xl">
                     {"Carlos Eduardo Pegoraro"}
                     <span className={"text-cyan-400 ms-4"}>{"Lopes"}</span>
-                </span>
-                <span className={"text-cyan-400 text-2xl font-semibold"}>
+                </h1>
+                <span className="text-xl font-semibold text-cyan-400 sm:text-2xl">
                     {"Economista & Desenvolvedor Pleno"}
                 </span>
-                <span className={"text-neutral-50 text-xl font-medium"}>
+                <span className="max-w-2xl text-base font-medium text-neutral-50 sm:text-lg lg:text-xl">
                     {"Transformo dados em decisões e código em soluções. Unindo Análise econômica, estratégia e tecnologia para desenvolver produtos digitais que geram impacto"}
                 </span>
                 <Link to={"/"} className={"text-neutral-50 text-lg font-bold  py-2 px-6 w-fit rounded-lg " +
@@ -25,7 +25,7 @@ export default function HeroSection() {
                     "hover:bg-cyan-800/60 hover:border-cyan-800/60 duration-300 animate-pulse"}>
                     {" > Explorar o meu Trabalho"}
                 </Link>
-                <div className={"grid grid-cols-4 w-1/2"}>
+                <div className="grid w-full max-w-xs grid-cols-4">
                     <Link to={"https://github.com/CarlosPegoraro"} target={"_blank"}
                           className={"text-white text-5xl hover:text-cyan-800 duration-300"}>
                         <i className="bi bi-github"></i>
@@ -44,8 +44,8 @@ export default function HeroSection() {
                     </a>
                 </div>
             </article>
-            <div className={"col-span-6 neo-pulse"}>
-                <img src={brain} alt={"Brain"}/>
+            <div className="neo-pulse mx-auto w-full max-w-md lg:max-w-none">
+                <img src={brain} alt={"Brain"} className="h-auto w-full"/>
             </div>
         </section>
     )
