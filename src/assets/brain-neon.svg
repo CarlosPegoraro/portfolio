@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 430" role="img" aria-labelledby="title desc">
+    <title id="title">Cérebro neon dividido entre análise e código</title>
+    <desc id="desc">Ilustração vetorial de um cérebro em duas metades, roxa à esquerda e ciano à direita, com símbolo de
+        código.
+    </desc>
+    <defs>
+        <linearGradient id="leftStroke" x1="70" y1="70" x2="255" y2="380" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#28dfea"/>
+            <stop offset="0.55" stop-color="#00d9e8"/>
+            <stop offset="1" stop-color="#20b7ff"/>
+        </linearGradient>
+        <linearGradient id="rightStroke" x1="265" y1="70" x2="455" y2="380" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#28d9ff"/>
+            <stop offset="0.55" stop-color="#00d9e8"/>
+            <stop offset="1" stop-color="#20b7ff"/>
+        </linearGradient>
+        <filter id="glowPurple" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="7" result="blur"/>
+            <feFlood flood-color="#a84cff" flood-opacity="0.9"/>
+            <feComposite in2="blur" operator="in"/>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="glowCyan" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="7" result="blur"/>
+            <feFlood flood-color="#00eaff" flood-opacity="0.95"/>
+            <feComposite in2="blur" operator="in"/>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation="4" result="b"/>
+            <feMerge>
+                <feMergeNode in="b"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <clipPath id="leftClip">
+            <rect x="55" y="34" width="202" height="362" rx="24"/>
+        </clipPath>
+        <clipPath id="rightClip">
+            <rect x="263" y="34" width="202" height="362" rx="24"/>
+        </clipPath>
+    </defs>
+
+    <!-- left outer lobe -->
+    <g fill="none" stroke="url(#leftStroke)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M253 62
+             C236 45 208 48 195 65
+             C170 57 149 70 143 92
+             C119 94 102 111 102 133
+             C78 142 69 162 76 182
+             C55 198 54 224 67 241
+             C54 265 64 289 84 302
+             C79 328 96 348 119 351
+             C129 374 153 385 174 376
+             C192 395 225 391 240 369
+             C250 358 254 339 254 318 Z"/>
+        <path d="M252 66 L252 363" opacity="0.9"/>
+    </g>
+
+    <!-- right outer lobe -->
+    <g fill="none" stroke="url(#rightStroke)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+       filter="url(#glowCyan)">
+        <path d="M267 62
+             C284 45 312 48 325 65
+             C350 57 371 70 377 92
+             C401 94 418 111 418 133
+             C442 142 451 162 444 182
+             C465 198 466 224 453 241
+             C466 265 456 289 436 302
+             C441 328 424 348 401 351
+             C391 374 367 385 346 376
+             C328 395 295 391 280 369
+             C270 358 266 339 266 318 Z"/>
+        <path d="M268 66 L268 363" opacity="0.9"/>
+    </g>
+
+    <!-- left convolutions -->
+    <g clip-path="url(#leftClip)" fill="none" stroke="url(#leftStroke)" stroke-width="3.2" stroke-linecap="round"
+       stroke-linejoin="round" opacity="0.95">
+        <path d="M201 72 C180 78 171 92 177 109 C157 106 143 116 143 132 C125 134 116 149 121 164"/>
+        <path d="M220 81 C206 92 203 105 211 118 C193 119 183 132 188 146 C168 153 162 169 171 183"/>
+        <path d="M151 94 C133 104 130 119 137 131 C116 135 106 150 111 166 C92 175 89 194 99 207"/>
+        <path d="M210 143 C226 151 230 166 221 179 C238 188 239 205 227 216"/>
+        <path d="M144 164 C129 176 130 191 140 202 C122 211 118 227 128 240 C108 247 103 265 113 279"/>
+        <path d="M189 183 C174 191 171 206 179 219 C160 225 154 240 161 253 C143 260 138 274 146 287"/>
+        <path d="M218 224 C202 231 198 247 207 259 C190 267 187 282 197 294 C181 301 178 317 188 328"/>
+        <path d="M151 287 C134 292 126 305 131 319 C112 322 103 336 109 350"/>
+        <path d="M230 300 C215 309 214 325 224 336 C213 346 214 361 225 369"/>
+        <path d="M165 118 C153 127 153 141 163 149 C149 159 149 172 159 181"/>
+        <path d="M103 219 C91 228 92 241 103 249"/>
+        <path d="M170 332 C160 343 163 357 174 365"/>
+    </g>
+
+    <!-- right convolutions -->
+    <!--
+      <g clip-path="url(#rightClip)" fill="none" stroke="url(#rightStroke)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+        <path d="M319 72 C340 78 349 92 343 109 C363 106 377 116 377 132 C395 134 404 149 399 164"/>
+        <path d="M300 81 C314 92 317 105 309 118 C327 119 337 132 332 146 C352 153 358 169 349 183"/>
+        <path d="M369 94 C387 104 390 119 383 131 C404 135 414 150 409 166 C428 175 431 194 421 207"/>
+        <path d="M310 143 C294 151 290 166 299 179 C282 188 281 205 293 216"/>
+        <path d="M376 164 C391 176 390 191 380 202 C398 211 402 227 392 240 C412 247 417 265 407 279"/>
+        <path d="M331 183 C346 191 349 206 341 219 C360 225 366 240 359 253 C377 260 382 274 374 287"/>
+        <path d="M302 224 C318 231 322 247 313 259 C330 267 333 282 323 294 C339 301 342 317 332 328"/>
+        <path d="M369 287 C386 292 394 305 389 319 C408 322 417 336 411 350"/>
+        <path d="M290 300 C305 309 306 325 296 336 C307 346 306 361 295 369"/>
+        <path d="M355 118 C367 127 367 141 357 149 C371 159 371 172 361 181"/>
+        <path d="M417 219 C429 228 428 241 417 249"/>
+        <path d="M350 332 C360 343 357 357 346 365"/>
+      </g>
+    -->
+
+    <!-- code symbol -->
+    <g fill="none" stroke="#19efff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
+       filter="url(#softGlow)">
+        <path d="M321 201 L301 219 L321 237"/>
+        <path d="M370 201 L390 219 L370 237"/>
+        <path d="M354 191 L338 247"/>
+    </g>
+</svg>

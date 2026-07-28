@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap'); /*Header*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap'); /*Text*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap'); /*Code*/
+
+@import url('styles/animations.css');
+@import url('styles/customCard.css');
+
+@import "tailwindcss";
+
+@theme {
+    --font-header: "Sora", sans-serif;
+    --font-code: "Source Code Pro", monospace;
+    --font-text: "Manrope", sans-serif;
+    --fade-duration: 0.8s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+}
