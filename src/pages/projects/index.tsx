@@ -2,6 +2,12 @@ import {Link} from "react-router";
 import Layout from "@/pages/Layout.tsx";
 import {useEffect, useRef, useState, type CSSProperties} from "react";
 
+import goepiImage from "@/assets/projects/goepi.png";
+import phronesisImage from "@/assets/projects/phronesis.png";
+import buscalogImage from "@/assets/projects/buscalog.png";
+import cursoDevImage from "@/assets/projects/cursodev.png";
+import redeDorImage from "@/assets/projects/rededor.png";
+
 type Project = {
     number: string;
     title: string;
@@ -9,6 +15,7 @@ type Project = {
     description: string;
     stacks: string[];
     accent: "cyan" | "violet";
+    image: string;
 };
 
 const projects: Project[] = [
@@ -21,40 +28,62 @@ const projects: Project[] = [
             "Com integrações a sistemas de SST e CRMs, o GoEPI reduz processos manuais, aumenta a rastreabilidade e facilita o cumprimento das obrigações de segurança ocupacional.",
         stacks: ["Laravel", "Vite", "Postgres", "SST", "Automações"],
         accent: "cyan",
+        image: goepiImage,
     },
     {
         number: "02",
-        title: "WAA Investimentos",
-        subtitle: "Análise de ativos para decisões melhores",
-        description: "Sistema de análise de ativos que transforma informações do mercado em uma experiência clara para investidores, com indicadores e ferramentas para apoiar cada decisão.",
-        stacks: ["Laravel", "Livewire", "APIs", "Dados"],
+        title: "Phrónesis Blog",
+        subtitle: "Academia de estudos sociais",
+        description: "Blog desenvolvido para reunir artigos e reflexões sobre tecnologia, economia, filosofia e temas relacionados à sociedade contemporânea. O projeto busca transformar assuntos complexos em conteúdos organizados, acessíveis e relevantes para diferentes públicos.\n" +
+            "\n" +
+            "A plataforma foi estruturada para facilitar a publicação e a descoberta de artigos, oferecendo uma experiência de leitura limpa, responsiva e direcionada à construção e ao compartilhamento de conhecimento.",
+        stacks: ["Laravel", "Livewire", "Blog", "Acadêmico"],
         accent: "violet",
+        image: phronesisImage,
     },
     {
         number: "03",
         title: "Buscalog",
-        subtitle: "Gestão de frotas conectada",
-        description: "Plataforma de rastreamento e gestão de frotas desenvolvida para dar visibilidade à operação, automatizar rotinas e apoiar uma logística mais eficiente.",
+        subtitle: "Gestão e Rastreamento de Frotas",
+        description: "Plataforma desenvolvida para centralizar o monitoramento de veículos e dispositivos de rastreamento, oferecendo maior controle sobre frotas, trajetos, eventos e informações operacionais.\n" +
+            "\n" +
+            "O BuscaLog processa a comunicação simultânea de centenas de dispositivos via TCP/IP, permitindo acompanhar posições e ocorrências em uma interface centralizada. A solução também organiza históricos, relatórios e dados de telemetria, auxiliando empresas na tomada de decisões e na segurança de suas operações.",
         stacks: ["Laravel", "React", "TCP", "Microserviços"],
         accent: "cyan",
+        image: buscalogImage,
+    },
+    {
+        number: "04",
+        title: "Clone TabNews",
+        subtitle: "Curso do Filipe Deschamps",
+        description: "Aplicação desenvolvida para reproduzir a estrutura do TabNews e aprofundar conhecimentos na construção de sistemas web completos. O projeto reúne interface, persistência de dados, testes automatizados e infraestrutura em containers.\n" +
+            "\n" +
+            "Com Next.js, React, PostgreSQL e Docker, o Clone TabNews foi utilizado para estudar arquitetura de software, integração com banco de dados, organização de ambientes e evolução incremental de uma aplicação real.",
+        stacks: ["Next.js", "React", "PostgreSQL", "Docker"],
+        accent: "violet",
+        image: cursoDevImage,
+    },
+    {
+        number: "05",
+        title: "Análise de Mercado - Rede D’Or",
+        subtitle: "Análise financeira e setorial",
+        description: "Aplicação institucional desenvolvida para apresentar uma análise estruturada da Rede D’Or, reunindo informações sobre a empresa, o setor de saúde, crescimento da receita, concorrência e desempenho financeiro.\n" +
+            "\n" +
+            "O projeto organiza dados e indicadores em uma experiência visual moderna e interativa, facilitando a compreensão da companhia e de sua tese de investimento por meio de gráficos, animações e seções analíticas. A aplicação foi construída como site estático com React, TypeScript e Vite.",
+        stacks: ["Microeconomia", "Análise de Mercado", "React", "Recharts"],
+        accent: "cyan",
+        image: redeDorImage,
     },
 ];
 
-function ImagePlaceholder({title, accent}: Pick<Project, "title" | "accent">) {
+function ProjectImage({title, accent, image}: Pick<Project, "title" | "accent" | "image">) {
     const accentClasses = accent === "cyan"
         ? "border-cyan-400/40 from-cyan-500/20 via-slate-950 to-slate-950 text-cyan-300"
         : "border-violet-400/40 from-violet-500/20 via-slate-950 to-slate-950 text-violet-300";
 
     return (
-        <div className={`relative flex min-h-80 overflow-hidden rounded-2xl border bg-linear-to-br bg-fixed p-8 shadow-2xl ${accentClasses}`}>
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_65%_35%,rgba(255,255,255,0.12),transparent_1px)] bg-size-[18px_18px] opacity-35"/>
-            <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full border border-current opacity-20"/>
-            <div className="absolute -bottom-28 left-16 h-72 w-72 rounded-full border border-current opacity-20"/>
-            <div className="relative z-10 mt-auto font-code">
-                <span className="mb-3 block text-xs uppercase tracking-[0.32em] text-slate-400">Imagem do projeto</span>
-                <span className="text-2xl font-semibold">{title}</span>
-                <p className="mt-2 max-w-sm text-sm text-slate-400">Substitua este espaço por um screenshot ou mockup do projeto.</p>
-            </div>
+        <div className={`relative overflow-hidden rounded-2xl border bg-slate-950 shadow-2xl ${accentClasses}`}>
+            <img src={image} alt={`Screenshot do projeto ${title}`} className="aspect-video h-full min-h-80 w-full object-cover object-top"/>
         </div>
     );
 }
@@ -115,7 +144,7 @@ function ProjectSlide({project, index}: {project: Project; index: number}) {
             <div style={style} className="project-scroll-panel relative z-10 mx-auto grid min-h-[74vh] max-w-7xl items-center gap-8 rounded-2xl border border-slate-800/80 bg-slate-950/90 p-5 shadow-[0_24px_80px_rgba(0,0,0,0.38)] backdrop-blur-md sm:rounded-3xl sm:p-6 md:sticky md:top-24 md:p-10 lg:grid-cols-2 lg:gap-16 lg:p-14">
                 <div className="absolute right-5 top-4 font-code text-5xl font-bold text-slate-800/70 md:right-7 md:top-5 md:text-8xl">{project.number}</div>
                 <div className={index % 2 ? "lg:order-2" : ""}>
-                    <ImagePlaceholder title={project.title} accent={accent}/>
+                    <ProjectImage title={project.title} accent={accent} image={project.image}/>
                 </div>
                 <div className={index % 2 ? "lg:order-1" : ""}>
                     <span className={`font-code text-sm font-bold uppercase tracking-[0.25em] ${titleColor}`}>Projeto selecionado</span>

@@ -2,30 +2,33 @@ import {useInView} from "@/hooks/useInView.tsx";
 import SectionTitle from "@/components/SectionTitle.tsx";
 import ProjectCard, {type ProjectCardProps} from "@/components/ProjectCard.tsx";
 
-import image from '@/assets/profile.jpeg'
+import goepi from '@/assets/projects/goepi.png'
+import phronesis from '@/assets/projects/phronesis.png'
+import buscalog from '@/assets/projects/buscalog.png'
+
 import {Link} from "react-router";
 
 const projects: ProjectCardProps[] = [
     {
-        title: "GoEPI — Gestão Inteligente de EPIs",
-        image: image,
+        title: "GoEPI",
+        image: goepi,
         text: "Plataforma completa para controle de EPIs, colaboradores, entregas, estoque e vencimentos, com integrações a sistemas de SST e automação dos processos de segurança ocupacional.",
         animationTime: "1s",
-        badges: ['Laravel', 'Livewire', 'Gestão de EPIs', 'SST'],
+        badges: ['Laravel', 'Vite', 'Postgres', 'SST', 'Automações'],
     },
     {
-        title: "WAA - Investimentos",
-        image: image,
-        text: "Sistema de analise de ativos para investidores",
+        title: "Phrónesis Blog",
+        image: phronesis,
+        text: "Blog de artigos e reflexões sobre tecnologia, economia, filosofia e a sociedade contemporânea, com uma experiência de leitura limpa e acessível.",
         animationTime: "3s",
-        badges: ['Laravel', 'Livewire', 'Webcralwing'],
+        badges: ['Laravel', 'Livewire', 'Blog', 'Acadêmico'],
     },
     {
-        title: "Buscalog - Gestão de Frotas",
-        image: image,
-        text: "Plataforma de rastreamento e gestão de frotas com microserviços",
+        title: "Buscalog",
+        image: buscalog,
+        text: "Plataforma para monitoramento de veículos e dispositivos de rastreamento, centralizando frotas, trajetos, eventos e dados de telemetria.",
         animationTime: "3s",
-        badges: ['Laravel', 'React', 'TCP'],
+        badges: ['Laravel', 'React', 'TCP', 'Microserviços'],
     },
 ]
 
@@ -47,7 +50,7 @@ export default function Projects() {
                 ))}
             </section>
             <div className="flex items-center justify-center lg:col-span-12">
-                <Link to={"/projects"} className={"text-neutral-50 text-lg font-bold  py-2 px-6 w-fit rounded-lg " +
+                <Link to={"/projects"} onClick={() => window.scrollTo({top: 0, left: 0, behavior: "auto"})} className={"text-neutral-50 text-lg font-bold  py-2 px-6 w-fit rounded-lg " +
                     "bg-cyan-800/30 backdrop-blur-2xl bg-clip-padding border-2 border-cyan-400/60 " +
                     "hover:bg-cyan-800/60 hover:border-cyan-800/60 duration-300 animate-pulse"}>
                     {" > Mais Projetos"}
