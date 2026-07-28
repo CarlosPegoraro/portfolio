@@ -2,6 +2,7 @@ import NavItem, {type NavItemsProps} from "./header/NavItem.tsx";
 import Logo from "./Logo.tsx";
 import {BackgroundMusic} from "@/components/BackgroundMusic.tsx";
 import {useState} from "react";
+import {Link} from "react-router";
 
 const navbarItems: NavItemsProps[] = [
     {text: "Sobre", link: "/#sobre", selected: false},
@@ -16,7 +17,9 @@ export default function Header() {
     return (
         <nav className="fixed z-20 w-full bg-gray-950/75 shadow-sm backdrop-blur-2xl">
             <div className="relative mx-auto flex min-h-18 max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-12">
-            <Logo />
+            <Link to={"/"}>
+                <Logo />
+            </Link>
             <button type="button" aria-label="Abrir menu" aria-expanded={isOpen} onClick={() => setIsOpen(!isOpen)}
                     className="rounded-md p-2 text-2xl text-white transition hover:bg-cyan-950/60 hover:text-cyan-300 md:hidden">
                 <i className={`bi ${isOpen ? "bi-x-lg" : "bi-list"}`}/>

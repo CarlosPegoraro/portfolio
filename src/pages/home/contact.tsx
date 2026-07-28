@@ -52,29 +52,29 @@ export default function Contact() {
                 })}
             </section>
 
-            <form className="grid gap-5 rounded-xl border border-cyan-950 bg-slate-950/65 p-5 shadow-[inset_0_0_20px_rgba(8,47,73,0.16)] backdrop-blur-sm md:grid-cols-12 lg:col-span-12"
-                  action="mailto:carlos.pegoraro@gmail.com" method="post" encType="text/plain">
-                <label className="flex flex-col gap-2 md:col-span-3">
-                    <span className="font-code text-sm font-bold text-slate-200">Nome</span>
-                    <input name="nome" required placeholder="Seu nome"
-                           className="rounded-md border border-slate-800 bg-slate-900/80 px-3 py-3 font-code text-sm text-white outline-none placeholder:text-slate-500 focus:border-cyan-500"/>
-                </label>
-                <label className="flex flex-col gap-2 md:col-span-3">
-                    <span className="font-code text-sm font-bold text-slate-200">E-mail</span>
-                    <input name="email" type="email" required placeholder="seu@email.com"
-                           className="rounded-md border border-slate-800 bg-slate-900/80 px-3 py-3 font-code text-sm text-white outline-none placeholder:text-slate-500 focus:border-cyan-500"/>
-                </label>
-                <label className="flex flex-col gap-2 md:col-span-4">
-                    <span className="font-code text-sm font-bold text-slate-200">Mensagem</span>
-                    <textarea name="mensagem" required rows={1} placeholder="Como posso te ajudar?"
-                              className="min-h-11 resize-y rounded-md border border-slate-800 bg-slate-900/80 px-3 py-3 font-code text-sm text-white outline-none placeholder:text-slate-500 focus:border-cyan-500"/>
-                </label>
-                <div className="flex items-end md:col-span-2">
-                    <button type="submit" className="h-11 w-full rounded-md border border-violet-400/50 bg-linear-to-r from-blue-800 to-violet-700 px-5 font-code text-sm font-bold text-white transition hover:from-blue-700 hover:to-violet-600">
-                        enviar mensagem <i className="bi bi-arrow-right ml-2"/>
-                    </button>
-                </div>
-            </form>
+            {/*<form className="grid gap-5 rounded-xl border border-cyan-950 bg-slate-950/65 p-5 shadow-[inset_0_0_20px_rgba(8,47,73,0.16)] backdrop-blur-sm md:grid-cols-12 lg:col-span-12"*/}
+            {/*      action="mailto:carlos.pegoraro@gmail.com" method="post" encType="text/plain">*/}
+            {/*    <label className="flex flex-col gap-2 md:col-span-3">*/}
+            {/*        <span className="font-code text-sm font-bold text-slate-200">Nome</span>*/}
+            {/*        <input name="nome" required placeholder="Seu nome"*/}
+            {/*               className="rounded-md border border-slate-800 bg-slate-900/80 px-3 py-3 font-code text-sm text-white outline-none placeholder:text-slate-500 focus:border-cyan-500"/>*/}
+            {/*    </label>*/}
+            {/*    <label className="flex flex-col gap-2 md:col-span-3">*/}
+            {/*        <span className="font-code text-sm font-bold text-slate-200">E-mail</span>*/}
+            {/*        <input name="email" type="email" required placeholder="seu@email.com"*/}
+            {/*               className="rounded-md border border-slate-800 bg-slate-900/80 px-3 py-3 font-code text-sm text-white outline-none placeholder:text-slate-500 focus:border-cyan-500"/>*/}
+            {/*    </label>*/}
+            {/*    <label className="flex flex-col gap-2 md:col-span-4">*/}
+            {/*        <span className="font-code text-sm font-bold text-slate-200">Mensagem</span>*/}
+            {/*        <textarea name="mensagem" required rows={1} placeholder="Como posso te ajudar?"*/}
+            {/*                  className="min-h-11 resize-y rounded-md border border-slate-800 bg-slate-900/80 px-3 py-3 font-code text-sm text-white outline-none placeholder:text-slate-500 focus:border-cyan-500"/>*/}
+            {/*    </label>*/}
+            {/*    <div className="flex items-end md:col-span-2">*/}
+            {/*        <button type="submit" className="h-11 w-full rounded-md border border-violet-400/50 bg-linear-to-r from-blue-800 to-violet-700 px-5 font-code text-sm font-bold text-white transition hover:from-blue-700 hover:to-violet-600">*/}
+            {/*            enviar mensagem <i className="bi bi-arrow-right ml-2"/>*/}
+            {/*        </button>*/}
+            {/*    </div>*/}
+            {/*</form>*/}
         </main>
     );
 }

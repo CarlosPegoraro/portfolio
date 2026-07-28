@@ -2,10 +2,14 @@ import {Link} from "react-router";
 import brain from "@/assets/brain-neon.svg"
 import cv from "@/assets/hero.png"
 
-export default function HeroSection() {
+interface HeroSectionProps {
+    isActive?: boolean;
+}
+
+export default function HeroSection({isActive = true}: HeroSectionProps) {
     return (
         <section className="mx-auto grid min-h-screen max-w-[1600px] grid-cols-1 items-center gap-10 px-5 pb-12 pt-28 sm:px-8 md:pt-32 lg:grid-cols-2 lg:px-12 xl:px-16">
-            <article className={"flex flex-col gap-6 text-white fade-in lg:gap-8"}
+            <article className={`flex flex-col gap-6 text-white lg:gap-8 ${isActive ? "fade-in" : ""}`}
                  style={{ "--fade-duration": "1.5s" } as React.CSSProperties}>
                 <span className="font-bold uppercase text-cyan-400 text-2xl sm:text-3xl lg:text-4xl">
                     {"Olá, Eu sou"}
@@ -44,7 +48,7 @@ export default function HeroSection() {
                     </a>
                 </div>
             </article>
-            <div className="neo-pulse mx-auto w-full max-w-md lg:max-w-none">
+            <div className={`mx-auto w-full max-w-md lg:max-w-none ${isActive ? "neo-pulse" : ""}`}>
                 <img src={brain} alt={"Brain"} className="h-auto w-full"/>
             </div>
         </section>

@@ -12,13 +12,17 @@ export function BackgroundMusic() {
         if (!audio) return;
 
         audio.volume = volume;
-
-        audio
-            .play()
-            .catch(() => {
+        const playMusic = () => {
+            audio.play().catch(() => {
                 // Alguns navegadores bloqueiam autoplay com som.
                 // Nesse caso, a música só vai tocar após interação do usuário.
             });
+        };
+
+        playMusic();
+        window.addEventListener("background-music-play", playMusic);
+
+        return () => window.removeEventListener("background-music-play", playMusic);
     }, [volume]);
 
     const toggleMute = () => {
