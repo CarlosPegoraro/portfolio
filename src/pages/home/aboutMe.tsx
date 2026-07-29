@@ -20,18 +20,22 @@ export default function AboutMe() {
                     <i className="bi bi-compass"></i> {"Sorocaba, Brasil"}
                 </article>
                 <article>
-                    <i className="bi bi-person-circle"></i> {"5 de Experiencia no Mercado"}
+                    <i className="bi bi-person-circle"></i> {"5 anos de experiência no mercado"}
                 </article>
                 <article>
-                    <i className="bi bi-bank"></i> {"Ciencias Economicas - Uniso"}
+                    <i className="bi bi-bank"></i> {"Ciências Econômicas — Uniso"}
                 </article>
                 <article>
-                    <i className="bi bi-code-square"></i> {"Analise e Desenvolvimento de Sistemas - FAC-SP"}
+                    <i className="bi bi-code-square"></i> {"Análise e Desenvolvimento de Sistemas — FAC-SP"}
                 </article>
             </section>
             <section className="mt-10 flex flex-col gap-6 text-lg/8 font-semibold sm:text-xl/9 lg:col-span-8 lg:mt-12 lg:text-2xl/10">
-                <article className={"text-neutral-50"}>Sou movido pela vontade de desenvolver não apenas sistemas, mas sim soluções completas que possam agregar valor real pra operações. Minhas formações me fizeram não só pensar no codigo mas tambem no produto e no mercado ao qual ele está inserindo, possibilitando assim tomar decisões mais eficiente se com maior impacto</article>
-                <article className={"text-neutral-50"}>Meu portifolio conta com soluções no mercado financeiro, de gestão de epis e tambem sistemas de gestão de frotas, o que me permitiu adquirir diversos conhecimentos de cada mercado</article>
+                <article className={"text-neutral-50"}>
+                    Sou movido pelo propósito de desenvolver não apenas sistemas, mas soluções completas capazes de gerar valor real para as operações e para o negócio. Minha formação multidisciplinar permite analisar cada projeto para além do código, considerando também o produto, o mercado e o contexto econômico no qual ele está inserido. Essa visão integrada contribui para decisões mais eficientes, estratégicas e orientadas a resultados.
+                </article>
+                <article className={"text-neutral-50"}>
+                    Meu portfólio reúne soluções voltadas ao mercado financeiro, à gestão de Equipamentos de Proteção Individual (EPIs) e ao gerenciamento de frotas. Essas experiências proporcionaram uma compreensão prática sobre diferentes segmentos, seus processos, desafios e necessidades específicas.
+                </article>
                 <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                     <div
                         className={"p-5 border-2 border-cyan-800 rounded-xl bg-cyan-800/10 backdrop-blur-2xl bg-clip-padding"}>
@@ -40,8 +44,8 @@ export default function AboutMe() {
                         </h1>
                         <ul className={"list-disc p-4 list-inside leading-10 font-medium"}>
                             <li>Análise de Mercados</li>
-                            <li>Modelagem Economia</li>
-                            <li>Estrategia & Negocios</li>
+                            <li>Modelagem Econômica</li>
+                            <li>Estratégia & Negócios</li>
                             <li>Indicadores e Forecast</li>
                         </ul>
                     </div>

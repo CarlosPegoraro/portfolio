@@ -12,7 +12,7 @@ export default function HeroSection({isActive = true}: HeroSectionProps) {
             <article className={`flex flex-col gap-6 text-white lg:gap-8 ${isActive ? "fade-in" : ""}`}
                  style={{ "--fade-duration": "1.5s" } as React.CSSProperties}>
                 <span className="font-bold uppercase text-cyan-400 text-2xl sm:text-3xl lg:text-4xl">
-                    {"Olá, Eu sou"}
+                    {"Olá, eu sou"}
                 </span>
                 <h1 className="font-bold uppercase text-neutral-50 text-4xl leading-tight sm:text-5xl lg:text-6xl xl:text-7xl">
                     {"Carlos Eduardo Pegoraro"}
@@ -22,13 +22,13 @@ export default function HeroSection({isActive = true}: HeroSectionProps) {
                     {"Economista & Desenvolvedor Pleno"}
                 </span>
                 <span className="max-w-2xl text-base font-medium text-neutral-50 sm:text-lg lg:text-xl">
-                    {"Transformo dados em decisões e código em soluções. Unindo Análise econômica, estratégia e tecnologia para desenvolver produtos digitais que geram impacto"}
+                    {"Transformo dados em decisões e código em soluções, unindo análise econômica, estratégia e tecnologia para desenvolver produtos digitais que geram impacto."}
                 </span>
-                <Link to={"/"} className={"text-neutral-50 text-lg font-bold  py-2 px-6 w-fit rounded-lg " +
+                <a href="#projects" className={"text-neutral-50 text-lg font-bold  py-2 px-6 w-fit rounded-lg " +
                     "bg-cyan-800/30 backdrop-blur-2xl bg-clip-padding border-2 border-cyan-400/60 " +
                     "hover:bg-cyan-800/60 hover:border-cyan-800/60 duration-300 animate-pulse"}>
-                    {" > Explorar o meu Trabalho"}
-                </Link>
+                    {" > Explorar meu trabalho"}
+                </a>
                 <div className="grid w-full max-w-xs grid-cols-4">
                     <Link to={"https://github.com/CarlosPegoraro"} target={"_blank"}
                           className={"text-white text-5xl hover:text-cyan-800 duration-300"}>

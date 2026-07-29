@@ -3,9 +3,9 @@ import SectionTitle from "@/components/SectionTitle.tsx";
 
 const impactStats = [
     {value: "4+", label: "Anos de experiência"},
-    {value: "10+", label: "Projetos Desenvolvidos"},
-    {value: "3", label: "Mercados Atingidos"},
-    {value: "3", label: "Formações Academicas"},
+    {value: "10+", label: "Projetos desenvolvidos"},
+    {value: "3", label: "Mercados atingidos"},
+    {value: "3", label: "Formações acadêmicas"},
 ];
 
 const economyTopics = ["Dados", "Análise", "Estratégia", "Decisões"];

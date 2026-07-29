@@ -39,7 +39,7 @@ export default function Projects() {
     });
 
     return (
-        <main ref={ref}
+        <main ref={ref} id={"projects"}
               className={"mx-4 grid grid-cols-1 gap-10 rounded-lg bg-linear-to-b from-gray-950/40 to-transparent px-5 py-10 sm:mx-8 sm:px-8 lg:mx-auto lg:max-w-[1600px] lg:grid-cols-12 lg:px-12 lg:py-14 xl:px-16 " +
                   (isVisible ? "fade-in" : "opacity-0")}>
             <SectionTitle text={"// Principais Projetos"}/>

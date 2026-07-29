@@ -4,7 +4,7 @@ import SectionTitle from "@/components/SectionTitle.tsx";
 const contactDetails = [
     {icon: "bi-envelope", label: "E-mail", value: "carlospegorarolopes@gmail.com", href: "mailto:carlospegorarolopes@gmail.com", color: "text-cyan-400"},
     {icon: "bi-geo-alt", label: "Localização", value: "Sorocaba, SP - Brasil", color: "text-violet-400"},
-    {icon: "bi-alarm", label: "Disponibilidade", value: "Projetos & Consultorias", color: "text-cyan-400"},
+    {icon: "bi-alarm", label: "Disponibilidade", value: "Projetos & consultorias", color: "text-cyan-400"},
     {icon: "bi-briefcase", label: "Redes", value: "GitHub | LinkedIn", href: "https://www.linkedin.com/in/carlos-eduardo-pegoraro-lopes-426a7637b/", color: "text-violet-400"},
 ];
 
