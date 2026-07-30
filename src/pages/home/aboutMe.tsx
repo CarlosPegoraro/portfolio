@@ -1,6 +1,7 @@
 import profile from '@/assets/profile.jpeg'
 import SectionTitle from "@/components/SectionTitle.tsx";
 import {useInView} from "@/hooks/useInView.tsx";
+import {Link} from "react-router";
 
 export default function AboutMe() {
     const { ref, isVisible } = useInView<HTMLElement>({
@@ -36,6 +37,9 @@ export default function AboutMe() {
                 <article className={"text-neutral-50"}>
                     Meu portfólio reúne soluções voltadas ao mercado financeiro, à gestão de Equipamentos de Proteção Individual (EPIs) e ao gerenciamento de frotas. Essas experiências proporcionaram uma compreensão prática sobre diferentes segmentos, seus processos, desafios e necessidades específicas.
                 </article>
+                <Link to="/about" onClick={() => window.scrollTo({top: 0, left: 0, behavior: "auto"})} className="w-fit rounded-lg border-2 border-cyan-400/60 bg-cyan-800/30 px-6 py-2 text-lg font-bold text-neutral-50 backdrop-blur-2xl transition duration-300 hover:border-cyan-800/60 hover:bg-cyan-800/60 animate-pulse">
+                    <i className="bi bi-person-lines-fill mr-2"/>Conheça minha trajetória
+                </Link>
                 <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                     <div
                         className={"p-5 border-2 border-cyan-800 rounded-xl bg-cyan-800/10 backdrop-blur-2xl bg-clip-padding"}>
