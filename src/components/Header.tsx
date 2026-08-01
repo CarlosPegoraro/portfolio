@@ -1,6 +1,6 @@
 import NavItem, {type NavItemsProps} from "./header/NavItem.tsx";
 import Logo from "./Logo.tsx";
-import {BackgroundMusic} from "@/components/BackgroundMusic.tsx";
+// import {BackgroundMusic} from "@/components/BackgroundMusic.tsx";
 import {useState} from "react";
 import {Link} from "react-router";
 
@@ -29,9 +29,9 @@ export default function Header() {
                     <NavItem key={item.text} text={item.text} selected={item.selected} link={item.link} onNavigate={() => setIsOpen(false)}/>
                 ))}
             </ul>
-            <div className="hidden gap-2 md:flex">
-                <BackgroundMusic />
-            </div>
+            {/*<div className="hidden gap-2 md:flex">*/}
+            {/*    <BackgroundMusic />*/}
+            {/*</div>*/}
             </div>
         </nav>
     )

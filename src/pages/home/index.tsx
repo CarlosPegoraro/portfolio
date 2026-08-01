@@ -48,7 +48,7 @@ export default function Home() {
                         <p className="font-code text-sm font-bold uppercase tracking-[0.28em] text-cyan-300">// experiência imersiva</p>
                         <h1 id="welcome-title" className="mt-5 font-header text-3xl font-semibold text-white sm:text-5xl">Bem-vindo ao meu portfólio</h1>
                         <p className="mx-auto mt-6 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
-                            Este portfólio foi pensado para ser visitado com calma. Para uma experiência mais completa, mantenha o som do site ativo durante a navegação.
+                            Este portfólio foi pensado para ser visitado com calma. Prepare-se pra conhecer mais do meu trabalho e jornada profissional.
                         </p>
                         <button type="button" onClick={startExperience} className="mt-9 rounded-lg border-2 border-cyan-400/60 bg-cyan-800/30 px-7 py-3 text-lg font-bold text-white transition duration-300 hover:border-cyan-300 hover:bg-cyan-800/60 focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:ring-offset-2 focus:ring-offset-slate-950">
                             Continuar <i className="bi bi-arrow-right ml-2"/>
